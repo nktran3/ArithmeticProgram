@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Arithmetic program</string>
+    <string name="prompt">Enter two numbers to make calculations:</string>
+    <string name="choice">Choose an arithmetic operation:</string>
+    <string name="addition_button">(+) Addition</string>
+    <string name="subtraction_button">(-) Subtraction</string>
+    <string name="multiplication_button">(*) Multiplication</string>
+    <string name="division_button">(\\) Division</string>
+    <string name="modulus_button">(%) Modulus</string>
+    <string name="calculate_button">CALCULATE</string>
+    <string name="hint1">0.0</string>
+    <string name="hint2">0.0</string>
+    <string name="result">0.0</string>
+</resources>

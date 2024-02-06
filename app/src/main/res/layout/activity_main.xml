@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9E4E9"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/input1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint1"
+            android:inputType="numberDecimal"
+            android:minHeight="50sp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            tools:ignore="Autofill,LabelFor,DuplicateSpeakableTextCheck" />
+
+
+        <EditText
+            android:id="@+id/input2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint2"
+            android:inputType="numberDecimal"
+            android:minHeight="50sp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            tools:ignore="Autofill,LabelFor,DuplicateSpeakableTextCheck" />
+
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/choice"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <RadioButton
+                android:id="@+id/addition"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:text="@string/addition_button"
+                android:textSize="20sp"/>
+
+
+            <RadioButton
+                android:id="@+id/subtraction"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:text="@string/subtraction_button"
+                android:textSize="20sp"/>
+
+
+            <RadioButton
+                android:id="@+id/multiplication"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:text="@string/multiplication_button"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+
+
+            <RadioButton
+                android:id="@+id/division"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:text="@string/division_button"
+                android:textSize="20sp"/>
+
+
+            <RadioButton
+                android:id="@+id/modulus"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:text="@string/modulus_button"
+                android:textSize="20sp"/>
+        </RadioGroup>
+            <Button
+                android:id="@+id/button"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/calculate_button"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:padding="15sp"
+                app:backgroundTint="#9A9B9B"/>
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:gravity="center"
+                android:text="@string/result"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
